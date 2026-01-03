@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef6ff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #2774ae;
+    color: white;
+    padding: 15px;
+}
+
+h1, h2 {
+    margin: 12px 0;
+}
+
+.image-box img {
+    width: 80%;
+    max-width: 900px;
+    border-radius: 10px;
+}
+
+.packing-list, .places {
+    background-color: white;
+    width: 80%;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+img {
+    margin: 20px 0;
+    border-radius: 10px;
+}

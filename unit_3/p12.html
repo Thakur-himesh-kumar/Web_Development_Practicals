@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Conditional & Loop Output</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        .box {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px gray;
+        }
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<h1>JavaScript Conditional Statements & Loops</h1>
+
+<div class="box" id="output"></div>
+
+<script>
+    let output = document.getElementById("output");
+
+    function print(text) {
+        output.innerHTML += text + "<br>";
+    }
+
+    // ================================
+    // CONDITIONAL STATEMENTS
+    // ================================
+    print("<b>Conditional Statements</b>");
+
+    // if
+    let age = 20;
+    if (age >= 18) {
+        print("You are eligible to vote");
+    }
+
+    // if-else
+    let number = 5;
+    if (number % 2 === 0) {
+        print("Even Number");
+    } else {
+        print("Odd Number");
+    }
+
+    // else-if
+    let marks = 75;
+    if (marks >= 90) {
+        print("Grade A");
+    } else if (marks >= 70) {
+        print("Grade B");
+    } else if (marks >= 50) {
+        print("Grade C");
+    } else {
+        print("Fail");
+    }
+
+    // switch
+    let day = 3;
+    switch (day) {
+        case 1:
+            print("Monday");
+            break;
+        case 2:
+            print("Tuesday");
+            break;
+        case 3:
+            print("Wednesday");
+            break;
+        default:
+            print("Invalid Day");
+    }
+
+    // ================================
+    // LOOPS
+    // ================================
+    print("<br><b>For Loop</b>");
+    for (let i = 1; i <= 5; i++) {
+        print(i);
+    }
+
+    print("<br><b>While Loop</b>");
+    let i = 1;
+    while (i <= 5) {
+        print(i);
+        i++;
+    }
+
+    print("<br><b>Do-While Loop</b>");
+    let j = 1;
+    do {
+        print(j);
+        j++;
+    } while (j <= 5);
+
+    // ================================
+    // CONDITION + LOOP
+    // ================================
+    print("<br><b>Even / Odd (1 to 10)</b>");
+    for (let k = 1; k <= 10; k++) {
+        if (k % 2 === 0) {
+            print(k + " is Even");
+        } else {
+            print(k + " is Odd");
+        }
+    }
+</script>
+
+</body>
+</html>

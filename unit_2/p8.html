@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Selectors Demo</title>
+
+<style>
+    * {
+        font-family: Arial, sans-serif;
+        box-sizing: border-box;
+    }
+
+    #main-title {
+        color: darkblue;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .highlight {
+        background-color: yellow;
+        font-weight: bold;
+    }
+
+    div p {
+        color: green;
+    }
+
+    h2, h3 {
+        color: brown;
+        border-bottom: 2px solid #ccc;
+        padding-bottom: 4px;
+    }
+
+    body {
+        background-color: #f0f8ff;
+        margin: 20px;
+    }
+
+    div {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 8px;
+        background: #fff;
+    }
+</style>
+
+</head>
+<body>
+
+<h1 id="main-title">CSS Selectors Demonstration</h1>
+
+<h2>1. Class Selector Example</h2>
+<p>This is a normal paragraph.</p>
+<p class="highlight">This paragraph is highlighted using a class selector.</p>
+
+<h2>2. ID Selector Example</h2>
+<p>The title above uses an <code>id="main-title"</code> to make it stand out.</p>
+
+<h2>3. Descendant Selector Example</h2>
+<div>
+    <p>This paragraph is inside a div and styled green using a descendant selector (<code>div p</code>).</p>
+</div>
+<p>This paragraph is outside the div and not affected by the descendant selector.</p>
+
+<h2>4. Group Selector Example</h2>
+<h3>This is an h3 element (styled together with h2).</h3>
+
+<h2>5. Universal Selector Example</h2>
+<p>The universal selector <code>*</code> applied a font and box-sizing to all elements on this page.</p>
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Trip to Jammu & Kashmir</title>
+
+  <style>
+    /* Page basics */
+    body{
+      font-family: Arial, sans-serif;
+      font-size: 20px;               /* matches screenshot */
+      background-color: orange;      /* matches screenshot inline style */
+      margin: 0;
+      color: #222;
+      line-height: 1.45;
+      padding: 18px;
+      box-sizing: border-box;
+    }
+
+    header{
+      text-align: center;
+      margin-bottom: 14px;
+    }
+
+    header h1{
+      margin: 6px 0;
+      font-size: 2em;
+    }
+
+    h2, h3 {
+      margin: 12px 0 8px;
+    }
+
+    /* Image styling */
+    .hero {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      margin: 8px auto 18px;
+    }
+
+    /* Lists */
+    .checklist, .places {
+      background: #fff;
+      padding: 12px 14px;
+      border-radius: 8px;
+      max-width: 900px;
+      margin: 10px auto;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+
+    .checklist ul, .places ul {
+      padding-left: 20px;
+      margin: 8px 0;
+    }
+
+    .places img {
+      max-width: 320px;
+      height: auto;
+      display: block;
+      margin: 8px 0;
+      border-radius: 6px;
+    }
+
+    /* Small bold note */
+    .note {
+      display: block;
+      background: #fff9c4;
+      padding: 8px 10px;
+      border-radius: 6px;
+      margin: 10px auto;
+      max-width: 900px;
+    }
+
+    /* Table styling */
+    table {
+      width: 60%;
+      border-collapse: collapse;
+      margin: 20px auto;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+
+    caption {
+      background-color: #4CAF50;
+      color: white;
+      font-size: 1.1em;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th, td {
+      border: 1px solid #444;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background: #f2f2f2;
+      font-weight: 700;
+    }
+
+    /* Link to external CSS (if you want to move styles) */
+    /* <link rel="stylesheet" href="external.css"> */
+
+    /* Responsive: make table and images full width on small screens */
+    @media (max-width: 800px) {
+      table { width: 100%; }
+      .places img { max-width: 100%; }
+      .checklist, .places, .note { max-width: 100%; padding: 10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Trip to Jammu &amp; Kashmir</h1>
+    <h2>Way of heaven</h2>
+  </header>
+
+  <!-- main hero image (replace file name with your image) -->
+  <img class="hero" src="kashmir.jpg" alt=Places to visit in Kashmir" width="850" height="350">
+
+  <div class="checklist">
+    <h3>Let's start with the items — pack with us:</h3>
+    <ul>
+      <li>Cloths
+        <ul>
+          <li>Winter jackets</li>
+          <li>Warm socks</li>
+        </ul>
+      </li>
+      <li>Backpack</li>
+      <li>Camera</li>
+      <li>Powerbank</li>
+    </ul>
+  </div>
+
+  <div class="places">
+    <h3>Places we want to visit:</h3>
+    <ul>
+      <li>Dal Lake</li>
+      <li>Gulmarg</li>
+      <li>Sonamarg</li>
+      <li>Katra</li>
+      <li>Srinagar</li>
+    </ul>
+
+    <!-- sample place images (replace file names with your images) -->
+    <img src="SONAMARG.jpg" alt="Sonamarg campsite" width="200" height="200">
+    <p class="note"><strong>Tip:</strong> If you are a spiritual person then you should definitely prefer Vaishno Devi pilgrimage.</p>
+
+    <img src="VAISNO DEVI.webp" alt="Vaishno Devi" width="200" height="200">
+    <p><em>Shiv khori, Raghunath temple, and Gulmarg in winter are other highlights.</em></p>
+  </div>
+
+  <div style="max-width:900px; margin:0 auto;">
+    <h3>Things you will enjoy at those places</h3>
+
+    <table>
+      <caption>Top Fun Activities in Kashmir</caption>
+      <thead>
+        <tr>
+          <th>Place</th>
+          <th>Fun Activity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Dal Lake</td>
+          <td>Shikara Ride &amp; Houseboat Stay</td>
+        </tr>
+        <tr>
+          <td>Gulmarg</td>
+          <td>Skiing &amp; Gondola Cable Car</td>
+        </tr>
+        <tr>
+          <td>Sonamarg</td>
+          <td>River Rafting &amp; Trekking</td>
+        </tr>
+        <tr>
+          <td>Katra</td>
+          <td>Pilgrimage to Vaishno Devi &amp; Helicopter Rides</td>
+        </tr>
+        <tr>
+          <td>Srinagar</td>
+          <td>Mughal Garden Tour &amp; Shopping at Lal Chowk</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Div and Span Layout Example</title>
+  <style>
+    * { box-sizing: border-box; font-family: Arial, sans-serif; }
+
+    body {
+      margin: 0;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #0277bc;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    .navbar {
+      background-color: #0321ea;
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    .navbar span {
+      color: white;
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+
+    .navbar span:hover {
+      background-color: #0056c7;
+      border-radius: 5px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1rem;
+      gap: 1rem;
+      max-width: 1100px;
+      margin: 1rem auto;
+    }
+
+    .sidebar {
+      flex: 1 1 25%;
+      background-color: #caf0f8;
+      padding: 1rem;
+      border-radius: 10px;
+      min-width: 220px;
+    }
+
+    .main-content {
+      flex: 1 1 70%;
+      background-color: #ffffff;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      min-width: 300px;
+    }
+
+    .highlight {
+      color: #0077b6;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #007776;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 700px) {
+      .container { flex-direction: column; padding: 0.75rem; }
+      .sidebar, .main-content { flex: 1 1 100%; min-width: auto; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Div and Span Layout Example</h1>
+  </header>
+
+  <div class="navbar">
+    <span>Home</span>
+    <span>About</span>
+    <span>Services</span>
+    <span>Contact</span>
+  </div>
+
+  <div class="container">
+    <div class="main-content">
+      <h2>Main Content</h2>
+      <p>This is the main content area. Use <span class="highlight">div</span> blocks for layout and <span class="highlight">span</span> for inline elements.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, repellat.</p>
+    </div>
+
+    <aside class="sidebar">
+      <h3>Sidebar</h3>
+      <p>Links, widgets, or navigation items go here.</p>
+      <ul>
+        <li>Recent post</li>
+        <li>Categories</li>
+        <li>Archives</li>
+      </ul>
+    </aside>
+  </div>
+
+  <footer>
+    &copy; 2025 My Website. All Rights Reserved.
+  </footer>
+</body>
+</html>

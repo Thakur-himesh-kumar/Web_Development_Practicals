@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Manipulation Demo</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+        .box {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+        }
+        button {
+            padding: 8px 12px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h2 id="title">DOM Manipulation Example</h2>
+
+<div class="box">
+    <p id="para1">This text will be changed using getElementById()</p>
+    <button onclick="changeById()">Change by ID</button>
+</div>
+
+<div class="box">
+    <p class="para2">This text will be changed using querySelector()</p>
+    <button onclick="changeByQuery()">Change by

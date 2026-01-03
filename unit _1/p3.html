@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Me - Table Layout</title>
+</head>
+<body>
+    <h1>About Me: Himesh Kumar Thakur</h1>
+    <p>This page demonstrates a table-based layout using merged cells, alignment, and caption while introducing HTML tables.</p>
+
+    <table border="1" cellspacing="10" cellpadding="5">
+        <caption><strong>Personal Information</strong></caption>
+
+        <tr>
+            <th>Name</th>
+            <th>Education</th>
+            <th>Skills</th>
+        </tr>
+
+        <tr>
+            <td rowspan="2" align="center">Himesh Kumar Thakur</td>
+            <td>B.Tech (CS)</td>
+            <td>Python</td>
+        </tr>
+        <tr>
+            <td align="center">Coding</td>
+        </tr>
+
+        <tr>
+            <td>Projects</td>
+            <td colspan="2" align="center">Smart India hackathon</td>
+        </tr>
+
+        <tr>
+            <td>Additional Info</td>
+            <td colspan="2" align="center">Quick Overview: Gaming</td>
+        </tr>
+
+        <tr>
+            <td>Contact</td>
+            <td>Email: thehimeshthakur@gmail.com</td>
+            <td>Phone: ‪+91 9523879823‬</td>
+        </tr>
+
+        <tr>
+            <td align="center" colspan="3">Exploring AI</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <strong>Explanation:</strong>
+    <ul>
+        <li><b>Caption:</b> The &lt;caption&gt; tag gives a title to the table.</li>
+        <li><b>Merged cells:</b> <code>rowspan</code> merges rows; <code>colspan</code> merges columns.</li>
+        <li><b>Alignment:</b> <code>align</code> is used for horizontal alignment.</li>
+        <li>All data above is related to <strong>Himesh Kumar Thakur</strong>.</li>
+    </ul>
+</body>
+</html>

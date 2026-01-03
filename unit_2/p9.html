@@ -1,0 +1,113 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page</title>
+  <style>
+    /* Base styles (Mobile First) */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 1rem;
+      background-color: #f9f9f9;
+      color: #0e0f0ef6;
+    }
+
+    header {
+      text-align: center;
+      border:#666;
+      padding: 0rem;
+      background-color: white;
+      color: #333;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .card {
+      background: white;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    /* Tablet styles */
+    @media (min-width: 600px) {
+      nav ul {
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    Section {
+        margin:10px 0;
+        padding:15px;
+        border:#053efa 2px solid;
+        border-radius:10px;
+        background-color:rgba(0, 247, 185, 0.947)
+    }
+    h3 {
+        color:#2ed405;
+    }
+
+    /* Desktop styles */
+    @media (min-width: 900px) {
+      .grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="box">
+    <Section><header id="main header"><h1>Hey, I'm Himesh Kumar Thakur</h1></header></Section>
+    <section class="about">
+        <h3>About me</h3>
+    A passionate web developer learning and experimenting modern technologies.
+    </section>
+    <section class="skills">
+        <h3>Skills</h3>
+        <ul>
+      <li>HTML,CSS</li>
+    </ul>
+    </section>
+  </div>
+  <footer> My Responsive Site
+  </footer>
+</body>
+</html>
